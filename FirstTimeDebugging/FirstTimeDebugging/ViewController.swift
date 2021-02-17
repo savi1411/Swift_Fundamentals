@@ -2,16 +2,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad( {
+    override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        var sample = "sample"
+        let sample = "sample"
         print(sample)
         
-        if false {
+        if true {
             print("Will this line of code ever be reached?")
-            someMetho()
+            someMethod()
         }
+        
+        let label = UILabel(frame: CGRect(x: 200, y: 400, width: 200, height: 44))
+        view.addSubview(label)
+        label.text = "Hello!"
         
         
     }
