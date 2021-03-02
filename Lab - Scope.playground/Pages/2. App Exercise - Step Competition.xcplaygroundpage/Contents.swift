@@ -22,22 +22,25 @@ let competitors = [stepMaster, activeSitter, monsterWalker]
  */
 func getWinner(competitors: [User]) -> User? {
     var topCompetitor: User?
-
-    for competitor in competitors {
-        if let topCompetitor = topCompetitor {
-            if competitor.stepsToday > topCompetitor.stepsToday {
+    
+        for competitor in competitors {
+            if let currentWinner = topCompetitor {
+                if competitor.stepsToday > currentWinner.stepsToday {
+                    topCompetitor = competitor
+                }
+            } else {
                 topCompetitor = competitor
             }
-        } else {
-            topCompetitor = competitor
         }
-    }
     return topCompetitor
 }
+let winner = getWinner(competitors: competitors)
+print(winner?.name ?? "")
+
 /*:
  Write a memberwise initializer inside the `User` struct above that uses variable shadowing for naming the parameters of the initializer.
  */
-
+// Ok, mas não resolve o problema do shadowing
 
 /*:
  Now write a failable initializer inside the `User` struct above that takes parameters `name` and `stepsToday` as an optional `String` and `Int`, respectively. The initializer should return `nil` if either of the parameters are `nil`. Use variable shadowing when unwrapping the two parameters.
