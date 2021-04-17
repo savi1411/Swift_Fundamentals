@@ -66,6 +66,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="T3C-Rr-uIJ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sEC-iM-jGl">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -177,7 +178,7 @@
                             <constraint firstItem="EYq-0c-Jec" firstAttribute="centerX" secondItem="DIY-EV-hFZ" secondAttribute="centerX" id="tQo-W4-ZFh"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Hobbies" image="hobbies" id="zh1-T4-kCX"/>
+                    <tabBarItem key="tabBarItem" title="Hobbies" id="zh1-T4-kCX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OwH-Gi-AG5" sceneMemberID="firstResponder"/>
             </objects>
@@ -186,7 +187,6 @@
     </scenes>
     <resources>
         <image name="family" width="29" height="29"/>
-        <image name="hobbies" width="29" height="29"/>
         <image name="milky_way" width="3008" height="2000"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <systemColor name="systemBackgroundColor">
